@@ -1,6 +1,11 @@
 import XCTest
 import Convert
 
+extension Data {
+    var description: String { debugDescription }
+    var debugDescription: String { NSData(data: self).debugDescription }
+}
+
 class Tests: XCTestCase {
     
     override func setUp() {
@@ -28,6 +33,9 @@ class Tests: XCTestCase {
     func testExample2() {
         // This is an example of a functional test case.
         XCTAssert(true, "Pass")
+        
+        let data11 = Data.ctJoin(1).ctJoin(2).ctJoin(3)
+        print("data11:\(data11.debugDescription)")
         
         
         //---------------------

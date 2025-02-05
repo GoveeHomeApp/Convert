@@ -22,6 +22,8 @@ extension Int {
 }
 
 extension UInt8 {
+    public var ctUInt16:UInt16 { UInt16(self & 0xFFFF) }
+    public var ctUInt32:UInt32 { UInt32(self & 0xFFFFFFFF) }
     public var ctInt:Int { Int(self) }
     public var ctCGFloat: CGFloat { CGFloat(self) }
     public var ctFloat: Float { Float(self) }
@@ -29,6 +31,8 @@ extension UInt8 {
 }
 
 extension UInt16 {
+    public var ctUInt8: UInt8 { UInt8(self & 0xFF) }
+    public var ctUInt32:UInt32 { UInt32(self & 0xFFFFFFFF) }
     public var ctInt:Int { Int(self) }
     public var ctCGFloat: CGFloat { CGFloat(self) }
     public var ctFloat: Float { Float(self) }
@@ -36,6 +40,8 @@ extension UInt16 {
 }
 
 extension UInt32 {
+    public var ctUInt8: UInt8 { UInt8(self & 0xFF) }
+    public var ctUInt16:UInt16 { UInt16(self & 0xFFFF) }
     public var ctInt:Int { Int(self) }
     public var ctCGFloat: CGFloat { CGFloat(self) }
     public var ctFloat: Float { Float(self) }
