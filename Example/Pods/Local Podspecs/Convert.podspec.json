@@ -1,0 +1,23 @@
+{
+  "name": "Convert",
+  "version": "0.1.0",
+  "summary": "A short description of Convert.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/yebiaoli/Convert",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "yebiaoli": "yebiao.li@ihoment.com"
+  },
+  "source": {
+    "git": "https://github.com/yebiaoli/Convert.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0",
+    "watchos": "7.0"
+  },
+  "source_files": "Convert/Classes/**/*"
+}
