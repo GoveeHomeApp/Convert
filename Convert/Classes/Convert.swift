@@ -139,6 +139,7 @@ extension UInt16 {
         guard index >= 0 && index < 16 else {
             print("Warning: Index out of range. Must be between 0 and 15.")
             assert(false,"Index out of range. Must be between 0 and 15.")
+            return false
         }
         let mask = UInt16(1) << index
         return (self & mask) != 0
